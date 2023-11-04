@@ -8,6 +8,7 @@ import { IProduto } from "../interfaces/produtoInterface";
 })
 
 export class PordutosService {
+
     api = 'http://localhost:8080/api/produtos';
 
     constructor(private http: HttpClient){}
@@ -15,6 +16,11 @@ export class PordutosService {
     buscarTodos(){
         return this.http.get<IProduto[]>(this.api);
     }
+
+    cadastrarProduto(produto: IProduto){
+        return this.http.post<IProduto>(this.api, produto);
+    }
+
             
    
 }

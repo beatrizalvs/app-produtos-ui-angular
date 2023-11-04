@@ -9,14 +9,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EditarProdutoComponent } from './pages/editar-produto/editar-produto.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ListaProdutosComponent,
     CadastroProdutoComponent,
-    EditarProdutoComponent
+    EditarProdutoComponent,
  
   ],
   imports: [

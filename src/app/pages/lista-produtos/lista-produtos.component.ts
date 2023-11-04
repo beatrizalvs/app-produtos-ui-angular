@@ -7,7 +7,7 @@ import { PordutosService } from 'src/app/services/produtos.service';
   templateUrl: './lista-produtos.component.html',
   styleUrls: ['./lista-produtos.component.css']
 })
-export class ListaProdutosComponent {
+export class ListaProdutosComponent implements OnInit{
 
   produtos: IProduto[] = [];
 
@@ -25,10 +25,6 @@ export class ListaProdutosComponent {
   }
 
   remover(id: number){
-    this.produtos = this.produtos.filter((produtos => produtos.id !== id));
-  }
-
-  alterar(id: number){
     this.produtos = this.produtos.filter((produtos => produtos.id !== id));
   }
  
